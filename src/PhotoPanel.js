@@ -3,7 +3,7 @@ import { Label } from './Label';
 import { Image } from './Image';
 import { LikeButton } from './LikeButton';
 
-export const PhotoPanel = ({ pic, label, index, likesCount, setLikesLocalStorage}) => {
+export const PhotoPanel = ({ pic, label, likesCount, setLikesLocalStorage}) => {
   const [count, setCount] = React.useState(likesCount);
   return (<div>
     <Image pic={pic} label={label} />
