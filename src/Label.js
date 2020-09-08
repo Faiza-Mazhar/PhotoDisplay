@@ -6,3 +6,7 @@ export const Label = ({ label }) => {
     </div>
   );
 };
+
+Label.defaultProps = {
+  label : "A bee and flower"
+}
