@@ -10,7 +10,3 @@ export const Label = ({ label }) => {
 Label.defaultProps = {
   label : "A bee and flower"
 }
-
-// Label.propTypes = {
-//   label: PropTypes.string
-// }
