@@ -6,3 +6,13 @@ export const Image = ({ pic, label }) => {
     </div>
   );
 };
+
+Image.defaultProps = {
+  pic : "./images/bee.jpg",
+  label: "A bee and flower"
+}
+
+// Image.propTypes = {
+// pic: PropTypes.string.isRequired,
+// label: PropTypes.string
+// }
