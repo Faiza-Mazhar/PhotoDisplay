@@ -14,14 +14,17 @@ export const PhotoPanel = ({
 }) => {
   const [count, setCount] = React.useState(likesCount);
 
+  const updateLikesCounter = (pic, count) => {
+    setCount(count)
+    setLikesLocalStorage(pic, count)
+  }
   return (
     <div>
       <Image pic={pic} label={label} />
       <Label label={label} />
       <LikeButton
         value={count}
-        setCount={setCount}
-        setLikesLocalStorage={setLikesLocalStorage}
+        updateLikesCounter={updateLikesCounter}
         pic={pic}
       />
       <Label label={count} />

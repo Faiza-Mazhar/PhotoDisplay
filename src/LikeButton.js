@@ -1,13 +1,12 @@
 import React from "react";
-export const LikeButton = ({ value, setCount, setLikesLocalStorage, pic }) => {
+export const LikeButton = ({ value, updateLikesCounter, pic }) => {
   return (
     <div>
       <span>
         <button
           onClick={() => {
             let temp = value + 1;
-            setCount(temp);
-            setLikesLocalStorage(pic, temp);
+            updateLikesCounter(pic, temp);
           }}
         >
           Like

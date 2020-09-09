@@ -7,13 +7,8 @@ function setLikes(pic, value) {
 }
 
 function App(props) {
-
-  function setFavouritePic(value) {
-    console.log(value);
-    setFavourite(value);
-  }
   
-  const [favouritePic, setFavourite] = React.useState("./images/bee.jpg");
+  const [favouritePic, setFavouritePic] = React.useState("None");
 
   let photoPanels = props.pictures.map((picture, index) => {
     return (
